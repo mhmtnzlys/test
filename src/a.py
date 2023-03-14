@@ -1,6 +1,4 @@
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
 '''A hello world class contains a Hello World! message'''
 class helloWorld:
