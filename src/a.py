@@ -5,4 +5,3 @@ class helloWorld:
     '''constructor'''
     def __init__(self):
         self.message = os.environ.get("MY_SECRET")
-print(helloWorld())
