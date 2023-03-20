@@ -8,3 +8,4 @@ class helloWorldTestCase(unittest.TestCase):
     def test_hello_world(self):
         myHelloWorld = helloWorld()
         self.assertEqual(myHelloWorld.message, '1')
+        
