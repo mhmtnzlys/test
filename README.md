@@ -10,7 +10,8 @@ $ sudo apt-get install git-lfs
 To track the files which we add:
 
 ```
-$ git lfs track ".csv" (git lfs track "data/.csv")```
+$ git lfs track ".csv" (git lfs track "data/.csv")
+```
 
 After tracking csv files in the path, we may upload our file or files.
 Note: Uploading files to codespaces depends on our internet connection.
@@ -26,7 +27,8 @@ To add the files to repo:
 ```
 $ git add path/file.csv
 $ git commit -m "add file.csv"
-$ git push```
+$ git push
+```
 
 ## Azure Functions Flask-Todo App
 Flask-Todo app consists of registeration, authentication, login part of an app.
