@@ -4,7 +4,8 @@ To add a file larger than 100 mb, git lfs (large file storage) must be installed
 To install:
 ```
 $ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
-$ sudo apt-get install git-lfs```
+$ sudo apt-get install git-lfs
+```
 
 To track the files which we add:
 
