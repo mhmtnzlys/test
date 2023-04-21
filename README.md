@@ -17,7 +17,12 @@ Run the following command in the terminal.
 $ export FLASK_APP=src/azureFunctions/flaskr.app
 $ flask run
 ```
-If running Flask app in a GitHub Codespaces web browser, click the link you see in terminal after running the previous command. The link looks like in the following line.\
-http://<your-codespace-name>.githubpreview.dev:8080/ \
-If running Flask app in a GitHub Codespaces local VS Code, go to the link in the following line.\
-http://localhost:5000 \
+If you're running a Flask app in a GitHub Codespaces web browser, click the link displayed in the terminal after running the previous command. The link will be in the following format:\
+```
+http://{your-codespace-name}.githubpreview.dev:8080/
+```
+If you're running a Flask app in a GitHub Codespaces local VS Code, go to the following link:\
+```
+http://localhost:5000
+```
+Note that the link for the web browser version and the link for the local VS Code version may be different, so be sure to use the correct link depending on which environment you're using to run your Flask app.
