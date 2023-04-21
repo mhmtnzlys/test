@@ -1,30 +1,3 @@
-source /home/vscode/venv/bin/activate
-
-Add New Libraries
-Please add "lib"=="version" in .devcontainer/requirements.txt
-
-Code Coverage
-To get code coverage:
-python -m coverage run -m unittest
-
-To show the coverage report:
-python -m coverage report
-
-```python
-def hello_world():
-    print("Hello, World!")
-    
-hello_world()
-```
-test
-
-
-```
-cd test
-```
-
-test
-
 ## Large File Storage
 To add a file larger than 100 mb, git lfs (large file storage) must be installed.
 
@@ -32,7 +5,7 @@ To install:
 ```
 $ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 $ sudo apt-get install git-lfs```
-To track the files which we add:
+<!-- To track the files which we add:
 ```
 $ git lfs track ".csv" (git lfs track "data/.csv")```
 After tracking csv files in the path, we may upload our file or files.
@@ -74,4 +47,4 @@ Run the following command in the terminal.
 ```
 $ export FLASK_APP=src/azureFunctions/flaskr.app
 $ flask run```
-- Open your web browser and go to http://localhost:5000
+- Open your web browser and go to http://localhost:5000 -->
