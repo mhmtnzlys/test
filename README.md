@@ -9,3 +9,9 @@ python -m coverage run -m unittest
 
 To show the coverage report:
 python -m coverage report
+
+```python
+def hello_world():
+    print("Hello, World!")
+    
+hello_world()
