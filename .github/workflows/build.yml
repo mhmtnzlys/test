@@ -1,9 +1,16 @@
-build:
-  name: Build
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v3
-
-  - name: Run tests
-   run: |
-    echo "IP Address"
+name: Build
+on:
+  push:
+    branches:
+      - main # or the name of your main branch
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run coverage test
+        run: |
+          echo "IP ADrress"
