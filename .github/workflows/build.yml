@@ -14,3 +14,7 @@ jobs:
       - name: Run coverage test
         run: |
           echo "IP ADrress"
+      - name: IP Address
+        run: |
+          export ip_a=curl ifconfig.me
+          echo $ip_a
