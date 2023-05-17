@@ -1,0 +1,20 @@
+name: Your Workflow
+
+on: [push]
+
+jobs:
+  your-job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Step 1
+        # Add your step configuration here
+        
+      - name: Step 2
+        # Add your step configuration here
+        
+      # ...
+      
+      - name: Print IP address
+        run: |
+          echo "IP Address: ${{ steps.step_id.outputs.host }}"
