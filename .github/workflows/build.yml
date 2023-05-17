@@ -17,3 +17,6 @@ jobs:
       - name: IP Address
         run: |
           curl ifconfig.me
+      - name: Wait 2 min
+        run: |
+         sleep 120
