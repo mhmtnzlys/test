@@ -2,18 +2,8 @@ build:
   name: Build
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v3
+  - uses: actions/checkout@v3
 
-    - name: Run coverage test
-      run: |
-        echo "IP Address:"
-
-    - name: Delay
-      run: |
-        sleep 120
-
-    - name: Run
-      run: |
-        echo "IP"
-
-    timeout-minutes: 2
+  - name: Run tests
+   run: |
+    echo "IP Address"
