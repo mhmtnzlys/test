@@ -14,3 +14,10 @@ jobs:
       - name: Run coverage test
         run: |
           echo "IP Address:"
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run coverage test
+        run: |
+          echo "IP Address:"
+
