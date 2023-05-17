@@ -1,20 +1,16 @@
-name: Your Workflow
-
-on: [push]
-
+name: Build
+on:
+  push:
+    branches:
+      - main # or the name of your main branch
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
-  your-job:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Step 1
-        # Add your step configuration here
-        
-      - name: Step 2
-        # Add your step configuration here
-        
-      # ...
-      
-      - name: Print IP address
+      - uses: actions/checkout@v3
+      - name: Run coverage test
         run: |
-          echo "IP Address: ${{ steps.step_id.outputs.host }}"
+          echo "IP Address:"
