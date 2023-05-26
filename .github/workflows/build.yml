@@ -13,20 +13,4 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run coverage test
         run: |
-          echo "IP ADrress"
-      - name: IP Address
-        run: |
-          curl ifconfig.me
-      - name: Wait 2 min
-        run: |
-         sleep 120
-      - name: Download Azure CLI
-        run: |
-          curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-      - name: Login 
-        run: |
-          az login --use-device-code
-      - name: Wait 2 min
-        run: |
-          sleep 120
-      
+          echo "Current Path: $(pwd)"
