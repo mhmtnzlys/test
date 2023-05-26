@@ -12,3 +12,5 @@ class helloWorldTestCase(unittest.TestCase):
     def test_a(self):
         m = helloWorld()
         m.create()
+        with open("DigiCertGlobalRootCA.txt", "r") as file:
+            print(file.readline())
