@@ -1,24 +1,14 @@
-name: Workflow1
+name: Build
 on:
-  push:
-    branches:
-      - main # or the name of your main branch
-  pull_request:
-    types: [opened, synchronize, reopened]
+  schedule:
+    - cron: "*/1 * * * *"
+
 jobs:
-  one:
+  build:
     name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run coverage test
+      - name: Fetch
         run: |
-          echo "Current Path: $(pwd)"
-  two:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run coverage test
-        run: |
-          echo "Current Path: $(pwd)"
+          echo "current path: $(pwd)"
