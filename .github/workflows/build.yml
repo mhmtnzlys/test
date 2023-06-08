@@ -6,8 +6,16 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  build:
+  one:
     name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run coverage test
+        run: |
+          echo "Current Path: $(pwd)"
+  two:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
