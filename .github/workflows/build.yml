@@ -11,4 +11,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Fetch
         run: |
+          export DENEME=${{ secrets.DENEME }}
           echo "current path: $(pwd)"
+          python /home/runner/work/test/test/x.py          
